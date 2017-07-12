@@ -2,4 +2,4 @@ To get started on development you will need Visual Studio. The main project curr
 
 The misc. projects target VC++ 2013, which is currently unopenable in the newest VS. For the moment you can just copy their .dll and .exe files from the main release since they are not updated often.
 
-I welcome pull requests, but if you make an update that modifies the miner files you will have to coordinate with me since they are downloaded separately.
+Pull requests are welcome, but if you make an update that modifies the miner files you will have to coordinate with me since they are downloaded separately.
