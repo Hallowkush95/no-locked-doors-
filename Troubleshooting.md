@@ -5,6 +5,7 @@ Check here first, then open an [Issue](https://github.com/NiceHash/NiceHashMiner
 * [NiceHashMiner is making Windows laggy](#lag)
 * [Freezing/Display driver crashing while mining](#ddcrash)
 * [Discrepancy between NiceHashMiner reported hashrates and NiceHash online stats](#profitdisc) 
+* [No supported devices](#nosupportdev)
 
 ### <a ref="dllerrors"></a> Missing .dll errors
 
@@ -43,3 +44,27 @@ These discrepancies are normal and can be caused by fluctuations in the NiceHash
 If your displayed profit is much lower than expected, make sure you aren't getting rejected shares which can be caused by overclocks/poor network connection.
 
 [Official comment](https://www.reddit.com/r/NiceHash/comments/6in4aw/mining_the_speed_on_the_web_is_not_the_same_as/)
+
+### <a ref="nosupportdev"></a> No supported devices
+
+You will get a message stating there are no supported devices found if NHML is not able to access any devices on your system. The first thing to check is whether your devices are supported:
+
+* CPUs: must support 64-bit and [AES instruction set](https://en.wikipedia.org/wiki/AES_instruction_set#Intel_and_AMD_x86_architecture). You can look up your specific CPU to make sure it supports this.
+
+* NVIDIA: Cuda Compute Capability 2.1 or higher. This includes *most* GPUs since the GeForce 600 series (and some older ones).
+
+* AMD: Any GPU with OpenCL support (note older GPUs, especially those with little VRAM, may perform poorly).
+
+Also old drivers may not show up in NHML. Try with the latest drivers to see if detection works.
+
+If you are certain your device is supported and it is connected and properly to your computer:
+
+**Users with a Maxwell 2.0 GPU only, meaning:**
+
+* For desktop: all GTX 900 series cards (note this does not include the GT card)
+
+* For mobile: all GTX 900m series cards 965m and up
+
+These GPUs have a setting in the NVIDIA Control Panel (NVCP) called "Optimize for computer performance". This mode can cause NHML to not be able to detect the GPU. Make sure this value is off in global settings. If you need the setting on for a specific program, you can disable it globally and add a program specific rule to enable it.
+
+If you are still unable to get your device to show up, please open an issue *and attach your log file*.
