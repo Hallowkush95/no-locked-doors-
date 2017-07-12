@@ -7,7 +7,7 @@ Check here first, then open an [Issue](https://github.com/NiceHash/NiceHashMiner
 * [Discrepancy between NiceHashMiner reported hashrates and NiceHash online stats](#profitdisc) 
 * [No supported devices](#nosupportdev)
 
-### <a ref="dllerrors"></a> Missing .dll errors
+### <a name="dllerrors"></a> Missing .dll errors
 
 These errors are generally caused because you don't have the correct version of Microsoft Visual C++ Redistributable installed. Users who use their computer as a daily driver will likely not run into this issue since VC++ is required for a great number of other programs.
 
@@ -21,11 +21,11 @@ Alternatively, you can install one of the Redistributables from Microsoft and ev
 
 * If `<version> = 141` [VC++ 2017](https://go.microsoft.com/fwlink/?LinkId=746572)
 
-### <a ref="bench"></a> Benchmark won't complete
+### <a name="bench"></a> Benchmark won't complete
 
 First, try running the benchmark on "Precise". If it still doesn't complete, [manually benchmark](https://github.com/NiceHash/NiceHashMinerLegacy/wiki/Getting-started#manualbenchmarking) the troublesome algorithm.
 
-### <a ref="lag"></a> NiceHash Miner Legacy is making Windows laggy
+### <a name="lag"></a> NiceHash Miner Legacy is making Windows laggy
 
 On a dedicated mining box, if the processor and motherboard support integrated graphics, simply connect the monitor to that instead. Otherwise, you could try decreasing the intensity for the miner that is causing problems, and accepting that it will run at a slightly slower speed. Google the file name of the miner and find a command line option to do with 'intensity'. Add this to the extra launch options for this miner, probably using a smaller number until it works better.
 * example 1: For claymore dual miners something like "-ethi 3" will probably help.
@@ -33,11 +33,11 @@ On a dedicated mining box, if the processor and motherboard support integrated g
 
 A dedicated page on this is coming soon.
 
-### <a ref="ddcrash"></a> Freezing/display driver crashing while mining
+### <a name="ddcrash"></a> Freezing/display driver crashing while mining
 
 Try disabling overclock if you have one. If not, this is usually caused by a conflict of the miner and your drivers, try opening an [Issue](https://github.com/NiceHash/NiceHashMinerLegacy/issues).
 
-### <a ref="profitdisc"></a> Discrepancy between NiceHash Miner Legacy reported hashrates and NiceHash online stats
+### <a name="profitdisc"></a> Discrepancy between NiceHash Miner Legacy reported hashrates and NiceHash online stats
 
 These discrepancies are normal and can be caused by fluctuations in the NiceHash network. The important value to check on the NiceHash online stats is the profit that is averaged over the last hour (in the box with projected monthly/weekly/daily profits). The fluctuations are more or less noise and can go up and down, canceling each other out over time.
 
@@ -45,7 +45,7 @@ If your displayed profit is much lower than expected, make sure you aren't getti
 
 [Official comment](https://www.reddit.com/r/NiceHash/comments/6in4aw/mining_the_speed_on_the_web_is_not_the_same_as/)
 
-### <a ref="nosupportdev"></a> No supported devices
+### <a name="nosupportdev"></a> No supported devices
 
 You will get a message stating there are no supported devices found if NHML is not able to access any devices on your system. The first thing to check is whether your devices are supported:
 
