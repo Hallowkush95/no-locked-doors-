@@ -7,28 +7,28 @@
 
 ## <a name="installing"></a> Installing
 
-1. Grab the [latest release zip file](https://github.com/DillonN/NiceHashMiner/releases/latest) and unzip the folder to a place of your choosing, then run `NiceHashMiner.exe`.
+1. Grab the [latest release zip file](https://github.com/NiceHash/NiceHashMinerLegacy/releases/latest) and unzip the folder to a place of your choosing, then run `NiceHashMinerLegacy.exe`.
 
-2. When running NHM for the first time it will automatically download the miner bins. Due to a bad connection to GitHub, some users may find that NHM gets stuck on the downloading process. If it is stuck for longer than ~20s, kill NiceHashMiner and try again. Alternatively, you can download the bin .zip files (`bin.zip` and `bin_3rdparty.zip` if you consented to 3rd party miners) from the release page. Simply extract the contained folders `bin` and `bin_3rdparty` to the same directory as `NiceHashMiner.exe`.
+2. When running NHML for the first time it will automatically download the miner bins. Alternatively, you can download the bin .zip files (`bin.zip` and `bin_3rdparty.zip` if you consented to 3rd party miners) from the release page. Simply extract the contained folders `bin` and `bin_3rdparty` to the same directory as `NiceHashMinerLegacy.exe`.
 
-3. Once NHM is loaded, enter your Bitcoin address and workername (0-7 characters, letters/numbers only) then run through the benchmark. NHM will automatically go through all enabled algorithm/miner combinations and record their speeds. If some fail, you can try them again with time set to "Precise".
+3. Once NHML is loaded, enter your Bitcoin address and workername (0-7 characters, letters/numbers only) then run through the benchmark. NHML will automatically go through all enabled algorithm/miner combinations and record their speeds. If some fail, you can try them again with time set to "Precise".
 
 4. If you are unable to get a benchmark to run, follow [Manual Benchmark](#manualbenchmarking) instructions.
 
-5. Once you are satisfied with the benchmarked algorithms, close the benchmark window and click start. NHM will automatically start the most profitable miner/algorithm combination based on the current paying rates from NiceHash.
+5. Once you are satisfied with the benchmarked algorithms, close the benchmark window and click start. NHML will automatically start the most profitable miner/algorithm combination based on the current paying rates from NiceHash.
 
-6. That's it! Let it run, and NHM will frequently check the NiceHash rates and switch to the most profitable miner. You can set a delay on the switching in settings.
+6. That's it! Let it run, and NHML will frequently check the NiceHash rates and switch to the most profitable miner. You can set a delay on the switching in settings.
 
 ## <a name="upgrading"></a> Upgrading
 
 The recommended method of upgrading is to extract the new .zip into a new folder, and only copy over your config files. The config files are located in the `configs` folder, so just drag that folder to the new directory.
 
-You can usually get away with just deleting the bin and bin_3rdparty folders, and then overwriting the remaining files. When you re-launch NiceHash, it will download the correct bin files automatically.
+You can usually get away with just deleting the bin and bin_3rdparty folders, and then overwriting the remaining files. When you re-launch NHML, it will download the correct bin files automatically.
 
-If you don't delete the folders, it will often leave NiceHash in an inconsistent state causing various issues:
+If you don't delete the folders, it will often leave NHML in an inconsistent state causing various issues:
 
 * Not deleting the bin folders will lead to not getting any miner updates. 
-* Any added "Extra Launch Options" will not work. These are cached in the `internals` folder, so you can safely delete this folder and NHM will reconstruct it. 
+* Any added "Extra Launch Options" will not work. These are cached in the `internals` folder, so you can safely delete this folder and NHML will reconstruct it. 
 
 If you don't care about whatever miner updates there may be and hate waiting for the download, you can keep your bin folders. There will still be an auto-download if a brand new miner has been added.
 
@@ -40,9 +40,9 @@ There is nothing wrong with enabling the disabled algorithms, and they are gener
 
 * Terminated benchmarks (can be fixed through [manual benchmarking](#manualbenchmarking)
 
-* Crashes (open an [Issue](https://github.com/DillonN/NiceHashMiner/issues) and post your log files for help)
+* Crashes (open an [Issue](https://github.com/NiceHash/NiceHashMinerLegacy/issues) and post your log files for help)
 
-* Tweaking to get the most profit (e.g. [Dual Algorithm intensity](https://github.com/DillonN/NiceHashMiner/wiki/Tweaking-ClaymoreDual-intensity))
+* Tweaking to get the most profit (e.g. [Dual Algorithm intensity](https://github.com/NiceHash/NiceHashMinerLegacy/wiki/Tweaking-ClaymoreDual-Intensity))
 
 ## <a name="manualbenchmarking"></a> Manual Benchmarking
 
@@ -60,4 +60,4 @@ Sometimes you may not be able to benchmark specific algorithms. The following st
 
 6. Let the miner run long enough to get a stable hashrate. Remember this number, then go back to `Settings -> Devices/Algorithms` and enter it manually in the `Benchmark Speed (H/s)` field. Note miners will generally show hashrates in larger units "e.g. GH/s" so you will have to add zeroes to adjust for this (look at the speed column to see it formatted with larger units).
 
-7. That's it! Once you've saved those settings, NHM will remember the speed you've found and use it for auto-switching.
+7. That's it! Once you've saved those settings, NHML will remember the speed you've found and use it for auto-switching.
