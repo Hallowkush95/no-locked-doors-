@@ -1,19 +1,35 @@
 Check here first, then open an [Issue](https://github.com/NiceHash/NiceHashMinerLegacy/issues) if you still need help (also search for your issue to see if it has been posted before). Provide log files.
 
-* [Missing .dll errors](#dllerrors)
+* [Missing/corrupt .dll errors](#dllerrors)
+  * [OpenCL.dll](#opencl)
+  * [msvcp<version>.dll/msvcr<version>.dll](#msvcp)
 * [Benchmark won't complete](#bench)
 * [NiceHashMiner is making Windows laggy](#lag)
 * [Freezing/Display driver crashing while mining](#ddcrash)
 * [Discrepancy between NiceHashMiner reported hashrates and NiceHash online stats](#profitdisc) 
 * [No supported devices](#nosupportdev)
 
-### <a name="dllerrors"></a> Missing .dll errors
+## <a name="dllerrors"></a> Missing .dll errors
 
-These errors are generally caused because you don't have the correct version of Microsoft Visual C++ Redistributable installed. Users who use their computer as a daily driver will likely not run into this issue since VC++ is required for a great number of other programs.
+Dll files are used for programs to access external libraries. In general, common dlls can be found either in the same directory as the program that uses it, or in a specific system directory in your Windows install. Both of these will work, however dlls in your Windows install can be run by any program without cluttering their program directory.
 
-An effort is made to include the correct .dlls, however sometimes this may slip through. If you run into this issue while opening a specific miner, try to find the specific .dll file in the NiceHashMiner directory, then copy it to the directory for the miner giving you issues. You can also open an [Issue](https://github.com/NiceHash/NiceHashMinerLegacy/issues) and on the next bin file update, I will add in the correct .dll.
+With this, there are two ways to fix a missing dll error for common dlls:
 
-Alternatively, you can install one of the Redistributables from Microsoft and every program will work without the need for copying .dlls since your Windows will have it (not just for NiceHashMiner, but any other programs as well). This will solve issues if the required .dll is of the form `msvcr<version>.dll` or `msvcp<version>.dll`. For each, try the x64 install first.
+* Get a copy of the .dll and put it in the program directory
+
+* Find an installer that can install it to your system
+
+### <a name="opencl"></a> Missing OpenCL.dll
+
+This dll allows programs to access OpenCL, which is generally used for AMD mining. Almost every AMD miner program will need access to it, and NHML uses it during the detection of AMD devices. 
+
+OpenCL.dll should be installed to your system almost always, since it is installed with your drivers. However in some circumstances (incomplete driver install, Windows Update) this may no longer work. 
+
+The first step would be to reinstall your graphics drivers. If that still doesn't work, you can find a copy of OpenCL.dll in the `\bin\ethminer` directory. From there you can copy it to the directory of the program that is giving you the error.
+
+### <a name="msvcp"></a> Missing msvcr<version>.dll or msvcp<version>.dll
+
+These dlls are necessary for programs written in Visual C++. Many miner programs as well as several auxiliary programs NHML uses are written in VC++ and require these dlls. You will find a copy of each dll needed for NHML and its auxiliary programs included in the NHML directory. However, some miner programs may still need them and you can copy to their directory as needed. You may also choose to install them globally, through the MSVC++ redistributable packages:
 
 * If `<version> = 120` [VC++ 2013](https://www.microsoft.com/en-ca/download/details.aspx?id=40784)
 
@@ -25,7 +41,7 @@ Alternatively, you can install one of the Redistributables from Microsoft and ev
 
 First, try running the benchmark on "Precise". If it still doesn't complete, [manually benchmark](https://github.com/NiceHash/NiceHashMinerLegacy/wiki/Getting-started#manualbenchmarking) the troublesome algorithm.
 
-### <a name="lag"></a> NiceHash Miner Legacy is making Windows laggy
+## <a name="lag"></a> NiceHash Miner Legacy is making Windows laggy
 
 On a dedicated mining box, if the processor and motherboard support integrated graphics, simply connect the monitor to that instead. Otherwise, you could try decreasing the intensity for the miner that is causing problems, and accepting that it will run at a slightly slower speed. Google the file name of the miner and find a command line option to do with 'intensity'. Add this to the extra launch options for this miner, probably using a smaller number until it works better.
 * example 1: For claymore dual miners something like "-ethi 3" will probably help.
@@ -33,11 +49,11 @@ On a dedicated mining box, if the processor and motherboard support integrated g
 
 A dedicated page on this is coming soon.
 
-### <a name="ddcrash"></a> Freezing/display driver crashing while mining
+## <a name="ddcrash"></a> Freezing/display driver crashing while mining
 
 Try disabling overclock if you have one. If not, this is usually caused by a conflict of the miner and your drivers, try opening an [Issue](https://github.com/NiceHash/NiceHashMinerLegacy/issues).
 
-### <a name="profitdisc"></a> Discrepancy between NiceHash Miner Legacy reported hashrates and NiceHash online stats
+## <a name="profitdisc"></a> Discrepancy between NiceHash Miner Legacy reported hashrates and NiceHash online stats
 
 These discrepancies are normal and can be caused by fluctuations in the NiceHash network. The important value to check on the NiceHash online stats is the profit that is averaged over the last hour (in the box with projected monthly/weekly/daily profits). The fluctuations are more or less noise and can go up and down, canceling each other out over time.
 
@@ -45,7 +61,7 @@ If your displayed profit is much lower than expected, make sure you aren't getti
 
 [Official comment](https://www.reddit.com/r/NiceHash/comments/6in4aw/mining_the_speed_on_the_web_is_not_the_same_as/)
 
-### <a name="nosupportdev"></a> No supported devices
+## <a name="nosupportdev"></a> No supported devices
 
 You will get a message stating there are no supported devices found if NHML is not able to access any devices on your system. The first thing to check is whether your devices are supported:
 
