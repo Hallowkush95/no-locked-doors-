@@ -2,7 +2,7 @@ Check here first, then open an [Issue](https://github.com/NiceHash/NiceHashMiner
 
 * [Missing/corrupt .dll errors](#dllerrors)
   * [OpenCL.dll](#opencl)
-  * [msvcp<version>.dll/msvcr<version>.dll](#msvcp)
+  * [msvcp\<version>.dll/msvcr\<version>.dll/vcruntime\<version>](#msvcp)
 * [Benchmark won't complete](#bench)
 * [NiceHashMiner is making Windows laggy](#lag)
 * [Freezing/Display driver crashing while mining](#ddcrash)
@@ -27,7 +27,7 @@ OpenCL.dll should be installed to your system almost always, since it is install
 
 The first step would be to reinstall your graphics drivers. If that still doesn't work, you can find a copy of OpenCL.dll in the `\bin\ethminer` directory. From there you can copy it to the directory of the program that is giving you the error.
 
-### <a name="msvcp"></a> Missing msvcr<version>.dll or msvcp<version>.dll
+### <a name="msvcp"></a> Missing msvcr\<version>.dll, msvcp\<version>.dll, or vcruntime\<version>.dll
 
 These dlls are necessary for programs written in Visual C++. Many miner programs as well as several auxiliary programs NHML uses are written in VC++ and require these dlls. You will find a copy of each dll needed for NHML and its auxiliary programs included in the NHML directory. However, some miner programs may still need them and you can copy to their directory as needed. You may also choose to install them globally, through the MSVC++ redistributable packages:
 
@@ -37,7 +37,7 @@ These dlls are necessary for programs written in Visual C++. Many miner programs
 
 * If `<version> = 141` [VC++ 2017](https://go.microsoft.com/fwlink/?LinkId=746572)
 
-### <a name="bench"></a> Benchmark won't complete
+## <a name="bench"></a> Benchmark won't complete
 
 First, try running the benchmark on "Precise". If it still doesn't complete, [manually benchmark](https://github.com/NiceHash/NiceHashMinerLegacy/wiki/Getting-started#manualbenchmarking) the troublesome algorithm.
 
