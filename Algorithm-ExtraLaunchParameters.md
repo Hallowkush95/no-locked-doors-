@@ -152,7 +152,9 @@ If you leave **ExtraLaunchParameters** empty the defaults will be used or ignore
 
 # How to add missing miner flag
 You can now add missing miner flags for certain miners (when manually updating/changing miners). After first start of **NiceHash Miner (v1.7.4.4 and up)** there will be an **internals** folder created. Here you will see **MinerOptionPackage_'MINER NAME'.json**. If there is a missing parameter you can edit the **GeneralOptions** for general optimizations or **TemperatureOptions** for temperature settings. This is the ccminer default:
-> {
+
+```JSON
+{
   "Name": "ccminer",
   "Type": 1,
   "GeneralOptions": [
@@ -167,6 +169,7 @@ You can now add missing miner flags for certain miners (when manually updating/c
   ],
   "TemperatureOptions": []
 }
+```
 
 There is only one general option **Intensity**. It has a short parameter name (**ShortName**), long parameter name (**LongName**), default value _**Please NOTE that this is the IgnoreDefaultValue. It will not set the miners to the set value, this value is for the parser to ignore**_ (**Default**), FlagType of 2 = MultiParam  ([explanation](https://github.com/nicehash/NiceHashMiner/wiki/Algorithm-ExtraLaunchParameters#flagtype) ) and a comma separator (**Separator**).
 
