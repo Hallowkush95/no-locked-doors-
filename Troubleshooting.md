@@ -3,6 +3,7 @@ Check here first, then open an [Issue](https://github.com/NiceHash/NiceHashMiner
 * [Missing/corrupt .dll errors](#dllerrors)
   * [OpenCL.dll](#opencl)
   * [msvcp\<version>.dll/msvcr\<version>.dll/vcruntime\<version>](#msvcp)
+  * [api-ms-win-crt-runtime-|1-1-0.dll](#crt)
 * [Benchmark won't complete](#bench)
 * [NiceHashMiner is making Windows laggy](#lag)
 * [Freezing/Display driver crashing while mining](#ddcrash)
@@ -36,6 +37,10 @@ These dlls are necessary for programs written in Visual C++. Many miner programs
 * If `<version> = 140` Run the VC++ 2015 installer in the `bin` folder, `vc_redist.x64.exe`
 
 * If `<version> = 141` [VC++ 2017](https://go.microsoft.com/fwlink/?LinkId=746572)
+
+### <a name="crt"></a> Missing api-ms-win-crt-runtime-|1-1-0.dll
+
+The program that is trying to launch depends on the Universal C Runtime, which is included in Windows 10 and available from Windows Update for older versions. You can try running Windows Update, or manually downloading the package from [Microsoft](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows).
 
 ## <a name="bench"></a> Benchmark won't complete
 
