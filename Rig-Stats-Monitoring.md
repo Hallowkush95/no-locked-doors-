@@ -30,3 +30,15 @@ Not all metrics are supported by every device. If one is not supported or there 
 The most common cause of misreported statuses are improper driver installations. Before going further, try reinstalling your drivers.
 
 If you are not seeing certain metrics on the Rig Stats page but they should be supported, there may be errors shown in your `\logs\log.txt` file. You can open an issue and post your `log.txt` and someone will try to track down the problem with you.
+
+### Perflib problems
+
+Perflib is the Windows library for getting multiple performance metrics. NHML uses this to get CPU load. Perflib relies on a data store which can become corrupt, giving errors of the form `Cannot load Counter Name data because an invalid index '' was read from the registry.`
+
+To fix this you can rebuild the registry with the following steps:
+
+1. Open an elevated command prompt
+2. Enter `lodctr /r` and you should see an error message
+3. Enter `lodctr /r` again and you should see a message `Info: Successfully rebuilt performance counter setting from system backup store`
+
+Perflib errors should subside after that.
