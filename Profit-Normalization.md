@@ -14,7 +14,9 @@ NHML uses a simple statistic method of determining outlying paying rates. If the
 
 * `IQRNormalizeFactor`: The number of IQRs above 3Q a deviant rate is normalized to. The lower the value, the more resistant NHML will be to upward profit spikes. The default is 2.0. It would not make sense to set this higher than `IQROverFactor`.
 
-When adjusting these values, you may find it useful to watch the log after each incoming paying rate. If an algorithm is deviant, you will see lines such as 
+When adjusting these values, you may find it useful to watch the log after each incoming paying rate. If an algorithm is deviant, you will see lines such as: 
+
+```[PROFITNORM] Algorithm x11gost profit deviant, 82.585293436375 IQRs over (0.0844 actual, 0.025571605 3Q). Normalizing to 0.026996275```
 
 ## Example
 
