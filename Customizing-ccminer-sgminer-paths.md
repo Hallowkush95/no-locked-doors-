@@ -12,7 +12,7 @@ Starting with NHML 1.8.1.3, the ccminer paths used for NVIDIA and sgminer for AM
 
 ## Editing the files
 
-After launching NHML 1.8.1.3 for the first time, the `internals` folder will contain new JSON files prefixed with `MinerPathPackage`. The files represent device families. To discern which family you want to edit, read [Finding device family](#devicefam). The files will contain a list of the available algorithms you can edit the paths for.
+After launching NHML 1.8.1.3 for the first time, the `internals` folder will contain new JSON files prefixed with `MinerPathPackage`. The files represent device families. To discern which family you want to edit, read [Finding device family](#finding-device-family). The files will contain a list of the available algorithms you can edit the paths for.
 
 ### Detailed description of MinerPathPackage file contents:
 
@@ -26,7 +26,7 @@ After launching NHML 1.8.1.3 for the first time, the `internals` folder will con
     * **Algorithm**: Internal ID number NHML uses to identify algorithm (**do not edit**)
     * **Path**: Miner path to use for this algorithm, relative to NHML main directory (the one with `NiceHashMinerLegacy.exe`). **This is the only field that should be edited**. It is recommended to only change the folder that comes after `bin`, but you are able to put in a path to any folder within the NHML directory. Make sure to use double slashes instead of the single that is normally used in Windows.
 
-### <a name="#devicefam"></a>Finding device family
+### Finding device family
 
 Device families are the following:
 
