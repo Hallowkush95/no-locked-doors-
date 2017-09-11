@@ -26,7 +26,7 @@ After launching NHML 1.8.1.3 for the first time, the `internals` folder will con
     * **Algorithm**: Internal ID number NHML uses to identify algorithm (**do not edit**)
     * **Path**: Miner path to use for this algorithm, relative to NHML main directory (the one with `NiceHashMinerLegacy.exe`). **This is the only field that should be edited**. It is recommended to only change the folder that comes after `bin`, but you are able to put in a path to any folder within the NHML directory. Make sure to use double slashes instead of the single that is normally used in Windows.
 
-### <a name="#devicefam"><\a>Finding device family
+### <a name="#devicefam"></a>Finding device family
 
 Device families are the following:
 
