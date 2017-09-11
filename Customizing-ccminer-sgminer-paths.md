@@ -9,10 +9,13 @@ Starting with NHML 1.8.1.3, the ccminer paths used for NVIDIA and sgminer for AM
   * In effect there will be no visual change in NHML that the path files have been customized.
 * The paths are relative to the NHML directory, changing to an external folder will not work.
 * **Not all miner forks have the same interface or support the same algorithms**. This means sometimes changing the path can cause some features such as benchmarking or speed display to not work correctly, or it may not launch at all. Because of this it is recommended to only change the path once you have tested a different fork outside of NHML and found it to work better.
+* The files are only read on launch, so any changes will require a restart of NHML.
 
 ## Editing the files
 
 After launching NHML 1.8.1.3 for the first time, the `internals` folder will contain new JSON files prefixed with `MinerPathPackage`. The files represent device families. To discern which family you want to edit, read [Finding device family](#finding-device-family). The files will contain a list of the available algorithms you can edit the paths for.
+
+If you need a new copy of the file, you can delete it and NHML will recreate it on next launch.
 
 ### Detailed description of MinerPathPackage file contents:
 
