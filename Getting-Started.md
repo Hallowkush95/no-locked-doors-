@@ -27,7 +27,7 @@ You can usually get away with just deleting the bin and bin_3rdparty folders, an
 
 If you don't delete the folders, it will often leave NHML in an inconsistent state causing various issues:
 
-* Not deleting the bin folders will lead to not getting any miner updates. 
+* Not deleting the bin folders will lead to not getting any miner updates (occasionally this can cause issues if NHML relies on the updated miner)
 * Any added "Extra Launch Options" will not work. These are cached in the `internals` folder, so you can safely delete this folder and NHML will reconstruct it. 
 
 If you don't care about whatever miner updates there may be and hate waiting for the download, you can keep your bin folders. There will still be an auto-download if a brand new miner has been added.
