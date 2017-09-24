@@ -21,16 +21,16 @@
 
 ## <a name="upgrading"></a> Upgrading
 
-The recommended method of upgrading is to extract the new .zip into a new folder, and only copy over your config files. The config files are located in the `configs` folder, so just drag that folder to the new directory.
+The recommended method of upgrading:
 
-You can usually get away with just deleting the bin and bin_3rdparty folders, and then overwriting the remaining files. When you re-launch NHML, it will download the correct bin files automatically.
+1. Extract the new .zip into a new folder 
+2. Copy the `configs` folder from the old folder to the new one. **Do not** copy over anything else
+3. Run the new `NiceHashMinerLegacy.exe` and it will download the updated miner files automatically
 
-If you don't delete the folders, it will often leave NHML in an inconsistent state causing various issues:
+If you extract the new zip to overwrite all the files, it will lead NHML to be in an inconsistent state:
 
-* Not deleting the bin folders will lead to not getting any miner updates (occasionally this can cause issues if NHML relies on the updated miner)
+* You will not get any miner updates (occasionally this can cause issues if NHML relies on the updated miner)
 * Any added "Extra Launch Options" will not work. These are cached in the `internals` folder, so you can safely delete this folder and NHML will reconstruct it. 
-
-If you don't care about whatever miner updates there may be and hate waiting for the download, you can keep your bin folders. There will still be an auto-download if a brand new miner has been added.
 
 ## <a name="advancedalgos"></a> Advanced Algorithms
 
