@@ -5,7 +5,7 @@
 
 ## Usage
 * [Rig Stats Monitoring](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Rig-Stats-Monitoring)
-* [Exporting benchmark data](https://github.com/bonifacio123/nh_tools)
+* [Exporting benchmark data](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Exporting-Benchmark-Data)
 
 ## Advanced Miner Usage
 * [Algorithm ExtraLaunchParameters](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Algorithm-ExtraLaunchParameters)
