@@ -7,10 +7,11 @@
 * [Rig Stats Monitoring](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Rig-Stats-Monitoring)
 * [Exporting benchmark data](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Exporting-Benchmark-Data)
 
-## Advanced Miner Usage
+## Advanced Usage
 * [Algorithm ExtraLaunchParameters](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Algorithm-ExtraLaunchParameters)
 * [Reserving API bind ports](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Reserving-API-bind-ports-(Advanced))
 * [Setting Environment Variables for Specific Miners](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Setting-Environment-Variables-for-specific-miners)
+* [Profit Normalization](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Profit-Normalization)
 
 ## Tips
 * [CPU Mining](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Notes-and-Hints-on-CPU-Mining)
