@@ -4,13 +4,15 @@ As of NHML 1.8.1.2, Profit Normalization is available to mitigate unnecessary sw
 
 The normalization feature attempts to detect unlikely short spikes in paying rates, and normalize them down to practical levels. If the paying rate stays high for some time, it will be reported as normal.
 
+As of NHML 1.8.1.4, profit normalization can be completely disabled by setting `NormalizedProfitHistory` to 0 (see below). 
+
 ## Customizing Normalization
 
 NHML uses a simple statistic method of determining outlying paying rates. If the paying rate received by NHML is higher than the third quartile (3Q) by a certain number of inter-quartile ranges (IQRs), it is normalized downward. There are three variables that can be customized by editing `\configs\General.json`:
 
 * `IQROverFactor`: This is the number of IQRs the new profit has to be above the 3Q in order to be flagged as deviant. The lower this value, the more resistant NHML will be to upward profit spikes. The default is 3.0.
 
-* `NormalizedProfitHistory`: The number of past profits to use for getting trends. The higher this value, the more resistant NHML will be to upward profit spikes. The default is 15. Normalization will not happen until this many profit values have been received.
+* `NormalizedProfitHistory`: The number of past profits to use for getting trends. The higher this value, the more resistant NHML will be to upward profit spikes. The default is 15. Normalization will not happen until this many profit values have been received. As of NHML 1.8.1.4, a setting of 0 will disable normalization.
 
 * `IQRNormalizeFactor`: The number of IQRs above 3Q a deviant rate is normalized to. The lower the value, the more resistant NHML will be to upward profit spikes. The default is 0.0. It would not make sense to set this higher than `IQROverFactor`.
 
