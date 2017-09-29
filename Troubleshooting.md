@@ -89,3 +89,19 @@ If you are certain your device is supported and it is connected and properly to 
 These GPUs have a setting in the NVIDIA Control Panel (NVCP) called "Optimize for computer performance". This mode can cause NHML to not be able to detect the GPU. Make sure this value is off in global settings. If you need the setting on for a specific program, you can disable it globally and add a program specific rule to enable it.
 
 If you are still unable to get your device to show up, please open an issue *and attach your log file*.
+
+## NiceHash Miner Legacy or included miners are being flagged by Anti-Virus
+
+Many miner programs are flagged by AV software because they are included in actual viruses. These viruses install the programs on inexperienced peoples' computers, and mine on them unknowingly.
+
+Because NHML downloads many miner files, most of which are flagged, it too gets flagged as a virus for the same reason as above. The AV companies do not have a reliable way to discern if NHML is downloading these files with the user's permission (as is the case), or if it is a virus downloading them to secretly mine on the computer.
+
+As a result of this, users should be prepared for NHML to be flagged and/or removed by their AV software, and know how to set up exceptions. If you do some research around the internet, you will find much information on why most miner software is flagged by AVs. It is something that much of the mining community has learned to live with, since the virus makers that ruin it for the rest of us likely won't stop including common miners in their Trojans.
+
+### What if I do not feel safe with making AV exceptions?
+
+There are two options available:
+
+* **Friendly option**: If you are using NVIDIA cards, you can use [NiceHash Miner 2](https://miner.nicehash.com/), which is made with an effort to prevent AV flags.
+
+* **Advanced option**: Download the NHML source code and compile it yourself. There are instructions on how to do so [here](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Development). This way you know exactly what is running on your computer. Unfortunately you would also have to compile all of the miner programs individually as well, since they are what is being flagged first usually. You would also have to forego 3rd party miners, since these are closed source.
