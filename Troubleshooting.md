@@ -9,6 +9,7 @@ Check here first, then open an [Issue](https://github.com/NiceHash/NiceHashMiner
 * [Freezing/Display driver crashing while mining](#ddcrash)
 * [Discrepancy between NiceHashMiner reported hashrates and NiceHash online stats](#profitdisc) 
 * [No supported devices](#nosupportdev)
+* [NiceHash Miner Legacy or included miners are being flagged and/or removed by anti-virus software](#nicehash-miner-legacy-or-included-miners-are-being-flagged-by-anti-virus)
 
 ## <a name="dllerrors"></a> Missing .dll errors
 
