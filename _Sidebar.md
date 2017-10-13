@@ -14,7 +14,7 @@
 * [Profit Normalization](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Profit-Normalization)
 
 ## Tips
-* [CPU Mining](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Notes-and-Hints-on-CPU-Mining)
+* [CPU Mining Optimization](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Notes-and-Hints-on-CPU-Mining)
 * [ethimer](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Ethminer-Tips)
 
 ## Claymore Dual Mining
