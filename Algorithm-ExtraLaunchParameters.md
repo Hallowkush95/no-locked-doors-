@@ -150,6 +150,22 @@ If you leave **ExtraLaunchParameters** empty the defaults will be used or ignore
 | | `-mvddc` | None | |
 
 
+## CPU Miners
+
+### xmrig
+| Long Name | Short Name | Default | Present if default | Notes |
+|:----------|:-----------|--------:|-------------------:|:------|
+|`--donate-level=`| | `0` | |
+|`--threads=`| `-t` | None| |
+|`--av=` | `-v` | `0` | |
+|`--cpu-affinity` | | None | |
+|`--cpu-priority` | | None | |
+|`--no-huge-pages` | | Off | | See Huge Pages |
+|`--no-color` | | Off | |
+|`--max-cpu-usage=`| | 75 | |
+|`--safe` | | Off | |
+
+
 # How to add missing miner flag
 You can now add missing miner flags for certain miners (when manually updating/changing miners). After first start of **NiceHash Miner (v1.7.4.4 and up)** there will be an **internals** folder created. Here you will see **MinerOptionPackage_'MINER NAME'.json**. If there is a missing parameter you can edit the **GeneralOptions** for general optimizations or **TemperatureOptions** for temperature settings. This is the ccminer default:
 
