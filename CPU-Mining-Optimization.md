@@ -23,3 +23,9 @@ https://msdn.microsoft.com/en-gb/library/ms190730.aspx (even though the how-to i
 3. By default the optimal number of used CPU Threads is automatically determined during benchmark. This setting is set for each algorithm in "Less Threads" setting (Settings / Devices/Algorithms / CPU / selected algorithm / Less Threads field). Please note that NiceHash Miner might utilize 100% of your CPU - thus **not** leaving some adequate CPU power for the background processes (such as GPU mining if you are also using GPUs in your system). If you wish to leave some thread/core unused by CPU mining, then you should set "Less Threads" to a value, greater than 0 (1 = leave 1 thread unused, 2 = 2 leave 2 threads unused, etc.).
 
 4. If you have a CPU **with** Hyper-Threading support (HT), then you might also want to experiment with special "Extra Launch Settings" (Settings / Devices/Algorithms / CPU / selected algorithm / Extra Launch Settings field). If you enter enable_ht=true in this field, and set "Less Threads" to 0, then NHM will use per-core affinity and run mining only on physical cores, leaving HT threads unused. In some cases this yields in a bit higher performance. You'll notice that only 50% of overall CPU utilization will be show by Task Manager or similar utilities, however due to the nature of mining algorithms and the nature of how Hyper-Threading works, **100% of CPU compute power will actually be used**.
+
+## Xmrig
+
+### Users with multiple CPUs
+
+Benchmarking does not currently take into account multiple CPUs, so when each CPU is benchmarked the total speed for all will be reported. This will be fixed in a future update. As a workaround, only benchmark one CPU then divide the hashrate by total CPUs and enter it for each one.
