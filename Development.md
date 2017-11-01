@@ -4,4 +4,4 @@ Once VS is setup, open `NiceHashMinerLegacy.sln` in VS. You will see multiple pr
 
 The misc. projects target VC++ 2013, which is currently unopenable in the newest VS. For the moment you can just copy their .dll and .exe files from the main release since they are not updated often.
 
-Pull requests are welcome, but if you make an update that modifies the miner files you will have to coordinate with me since they are downloaded separately and the sources need to be verified. There is no set formatting used, but please try to not have VS automatically format existing code. This clutters your PR with format changes ('{' moving down a line etc) and can make it hard to see what you are actually changing.
+Pull requests are welcome. There is no set formatting used, but please try to not have VS automatically format existing code. This clutters your PR with format changes ('{' moving down a line etc) and can make it hard to see what you are actually changing.
