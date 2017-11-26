@@ -24,6 +24,7 @@ In addition the following are overridden during benchmark only:
 * `h_print_time`
 * `daemon_mode`
 * `flush_stdout`
+* `output_file`
 
 ## Tweaking device configs
 
