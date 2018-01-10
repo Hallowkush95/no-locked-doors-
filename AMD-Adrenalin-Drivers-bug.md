@@ -1,8 +1,8 @@
 # AMD Adrenalin Drivers Bug
 
 * [Temporary Workaround](#workaround)
-* [Short version](#short-version)
-* [Long version](#long-version)
+* [Short explanation](#short-version)
+* [Long explanation](#long-version)
 
 There is currently an issue in the new AMD Adrenalin drivers (17.12.1+) that makes them incompatible with NHML. AMD is aware of the bug and hopefully there is a new version that fixes it soon.
 
