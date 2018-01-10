@@ -26,7 +26,7 @@ Some users with single GPUs have been able to get around this problem by modifyi
 ### Workaround
 In 1.8.1.6 there is a new config option you can use to manually specify bus IDs. You can get the bus ID from the device manager properties for your GPU. This method is intended for advanced users and the general recommendation is to not upgrade to Adrenalin drivers for now.
 
-If you have one GPU: Simply change the field `OverrideAMDBusIds` from `""` to `"<your bus ID>"`. E.g. if your bus ID is 2, enter `"2"`. (Keep quotations).
+If you have one GPU: Simply edit `configs\General.json` and change the field `OverrideAMDBusIds` from `""` to `"<your bus ID>"`. E.g. if your bus ID is 2, enter `"2"`. (Keep quotations).
 
 If you have more than one GPU, you can add multiple entries separated with commas. E.g. if you have 2 GPUs with IDs 1 and 2, enter `"1,2"`. Note the ordering is important, and it will take some trial and error on your part to find the correct ordering (the ordering is based off of OpenCL indexing that non-Claymore miners use in general).
 
