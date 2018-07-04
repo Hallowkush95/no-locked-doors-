@@ -52,9 +52,7 @@ Sometimes you may not be able to benchmark specific algorithms. The following st
 
 2. Go to the `Devices/Algorithms` tab and find the algorithm you wish to benchmark.
 
-3. Disable all algorithms except the one you want to bench (can be done by right clicking and selecting `Disable All Algorithms`). Optionally disable your other devices (recommended if they are the same).
-
-4. Enter any number into the `Benchmark Speed (H/s)` field, then save and close settings.
+3. Right click on the algorithm and click "Enable only this". If the algorithm doesn't have a speed, it will be automatically set to 1H/s as a placeholder.
 
 5. Run the miner and the one you selected should pop up (NOTE: if you have more than one identical card and a different algorithm is popping up, disable your other cards). 
 
