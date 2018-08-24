@@ -2,7 +2,7 @@
 
 | GPU support | Algorithm support | Third party? | Devfee |
 |:------------|:------------------|:-------------|--------:
-| All AMD | Many | No | No |
+| All AMD | Many | No |  |
 
 `sgminer` is an OpenCL miner used for various algorithms on AMD cards. Not all algorithms are available on all AMD devices. 
 
