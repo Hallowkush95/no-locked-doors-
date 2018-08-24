@@ -2,9 +2,9 @@
 
 Three Claymore miners are included with NHML as optional third-party miners:
 
-* [`ClaymoreZcash`]()
-* [`ClaymoreCryptoNote`]()
-* [`ClaymoreDual`]()
+* [`ClaymoreZcash`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/ClaymoreZcash)
+* [`ClaymoreCryptoNote`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/ClaymoreCryptoNote)
+* [`ClaymoreDual`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/ClaymoreDual)
 
 ## Common Extra Launch Parameters
 
