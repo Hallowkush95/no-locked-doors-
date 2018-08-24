@@ -53,6 +53,10 @@ Once the tuning is over, NHML will have stored the hashrates for every value it 
 
 3. Once you've found the right number, save it as per the previous section.
 
+## Intensity
+
+Intensity can be adjusted with the `ethi` and `dcri` parameters, which correspond to primary and secondary algorithms.
+
 ## Extra Launch Parameters
 
 As well as the [common Claymore ELPs](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Claymore#common-extra-launch-parameters), `ClaymoreDual` supports the following:
