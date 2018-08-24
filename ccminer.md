@@ -8,7 +8,8 @@
 |:----------|:-----------|--------:|-------------------:|
 |`--intensity`|`-i` | `0` | 
 
-### Additionally the CryptoNight fork supports
+Additionally the CryptoNight fork supports:
+
 | Long Name | Short Name | Default | Present if default |
 |:----------|:-----------|--------:|-------------------:|
 |`--launch=` | `-l` | `8x40` |
