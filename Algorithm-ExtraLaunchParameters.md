@@ -1,5 +1,5 @@
-# Algorithm ExtraLaunchParameters
-## How does it work:
+# Algorithm Extra Launch Parameters (ELPs)
+
 If you are an advanced user that wants to tweak the performance of your GPUs or CPUs you can set **supported** options in the **ExtraLaunchParameters** for selected Device and Algorithm.
 
 If you have 3 AMD devices with the following **ExtraLaunchParameters** settings for algorithm A and B:
@@ -17,11 +17,11 @@ If **algorithm A** is most profitable for all three devices, NiceHashMiner will 
 So when setting **ExtraLaunchParameters** set them **per device and algorithm** NiceHashMiner will group them accordingly.
 If you leave **ExtraLaunchParameters** empty the defaults will be used or ignored if no parameters have been set.
 
-# Supported options
+## Supported options
 
 See the miner's page under [list of miners](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Miners#list-of-included-miners).
 
-# How to add missing miner flags
+## How to add missing miner flags
 
 You can add missing miner flags for certain miners (when manually updating/changing miners). After first start of **NiceHash Miner (v1.7.4.4 and up)** there will be an **internals** folder created. Here you will see **MinerOptionPackage_'MINER NAME'.json**. If there is a missing parameter you can edit the **GeneralOptions** for general optimizations or **TemperatureOptions** for temperature settings. This is the ccminer default:
 
