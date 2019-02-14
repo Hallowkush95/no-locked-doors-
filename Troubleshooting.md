@@ -101,8 +101,4 @@ As a result of this, users should be prepared for NHML to be flagged and/or remo
 
 ### What if I do not feel safe with making AV exceptions?
 
-There are two options available:
-
-* **Friendly option**: If you are using NVIDIA cards, you can use [NiceHash Miner 2](https://miner.nicehash.com/), which is made with an effort to prevent AV flags.
-
-* **Advanced option**: Download the NHML source code and compile it yourself. There are instructions on how to do so [here](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Development). This way you know exactly what is running on your computer. Unfortunately you would also have to compile all of the miner programs individually as well, since they are what is being flagged first usually. You would also have to forego 3rd party miners, since these are closed source.
+Download the NHML source code and compile it yourself. There are instructions on how to do so [here](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Development). This way you know exactly what is running on your computer. Unfortunately you would also have to compile all of the miner programs individually as well, since they are what is being flagged first usually. You would also have to forego 3rd party miners, since these are closed source.
