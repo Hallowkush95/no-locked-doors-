@@ -17,12 +17,14 @@ Miners are the backbone of NHML. NHML includes many community-made miners. Some 
 
 ### NVIDIA
 
+* [ccminer](https://github.com/nicehash/NiceHashMinerLegacy/wiki/ccminer)
 * NBMiner
 * T-Rex
 * TTMiner
 
 ### AMD
 
+* [sgminer](https://github.com/nicehash/NiceHashMinerLegacy/wiki/sgminer)
 * TeamRedMiner
 
 ### CPU
