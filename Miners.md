@@ -11,7 +11,7 @@ Miners are the backbone of NHML. NHML includes many community-made miners. Some 
 ### NVIDIA and AMD
 
 * BMiner
-* [ClaymoreDual(https://github.com/nicehash/NiceHashMinerLegacy/wiki/ClaymoreDual)
+* [ClaymoreDual](https://github.com/nicehash/NiceHashMinerLegacy/wiki/ClaymoreDual)
 * GMiner
 * Phoenix
 
