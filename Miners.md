@@ -6,7 +6,7 @@ Miners are the backbone of NHML. NHML includes many community-made miners. Some 
 
 ### All devices
 
-* [`Xmr-Stak`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Xmr-Stak)
+* [Xmr-Stak](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Xmr-Stak)
 
 ### NVIDIA and AMD
 
@@ -27,4 +27,4 @@ Miners are the backbone of NHML. NHML includes many community-made miners. Some 
 
 ### CPU
 
-/
+* /
