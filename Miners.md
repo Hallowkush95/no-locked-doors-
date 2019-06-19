@@ -10,20 +10,21 @@ Miners are the backbone of NHML. NHML includes many community-made miners. Some 
 
 ### NVIDIA and AMD
 
-* [Claymore miners](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Claymore)
+* BMiner
+* ClaymoreDual
+* GMiner
+* Phoenix
 
 ### NVIDIA
 
-* [`ccminer`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/ccminer)
-* [`ethminer`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/ethminer)
-* [`EWBF`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/EWBF)
+* NBMiner
+* T-Rex
+* TTMiner
 
 ### AMD
 
-* [`sgminer`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/sgminer)
-* [`OptiminerZcash`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/OptiminerZcash)
+* TeamRedMiner
 
 ### CPU
 
-* [`xmrig`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/xmrig)
-* [`cpuminer`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/cpuminer)
+/
