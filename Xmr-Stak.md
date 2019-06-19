@@ -1,4 +1,3 @@
-# Xmr-Stak
 
 | GPU support | Algorithm support | Third party? | Devfee |
 |:------------|:------------------|:-------------|--------:
