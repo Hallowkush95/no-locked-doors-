@@ -13,17 +13,9 @@
 * [Setting Environment Variables for Specific Miners](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Setting-Environment-Variables-for-specific-miners)
 * [Profit Normalization](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Profit-Normalization)
 
-## [Miners](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Miners)
+## [Plugins](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Plugins)
 
 * [`Xmr-Stak`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Xmr-Stak)
-* [Claymore miners](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Claymore)
-* [`ccminer`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/ccminer)
-* [`ethminer`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/ethminer)
-* [`EWBF`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/EWBF)
-* [`sgminer`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/sgminer)
-* [`OptiminerZcash`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/OptiminerZcash)
-* [`xmrig`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/xmrig)
-* [`cpuminer`](https://github.com/nicehash/NiceHashMinerLegacy/wiki/cpuminer)
 
 ## Tips
 * [CPU Mining Optimization](https://github.com/nicehash/NiceHashMinerLegacy/wiki/CPU-Mining-Optimization)
