@@ -5,7 +5,7 @@
 </ul>
 
 <h1 id="plugin">What is a Plugin?</h1>
-<p>A plugin is an external or internal dependcy (dll). The ABI (Application Binary Interface) is defined in <b>MinerPlugin</b> project and plugin developers must implement the following interfaces <a href="../tree/master-next/src/Miners/MinerPlugin/IMinerPlugin.cs">IMinerPlugin</a> and <a href="../tree/master-next/src/Miners/MinerPlugin/MinerPlugin.cs">IMiner</a>. This means that you create a new project inside Miners directory and implement all required functions from IMinerPlugin and IMiner interfaces. It is recommended that each one is in its own file (Plugin and Miner file).</p>
+<p>A plugin is an external or internal dependcy (dll). The ABI (Application Binary Interface) is defined in <b>MinerPlugin</b> project and plugin developers must implement the following interfaces <a href="../tree/master-next/src/Miners/MinerPlugin/IMinerPlugin.cs">IMinerPlugin</a> and <a href="../tree/master-next/src/Miners/MinerPlugin/IMiner.cs">IMiner</a>. This means that you create a new project inside Miners directory and implement all required functions from IMinerPlugin and IMiner interfaces. It is recommended that each one is in its own file (Plugin and Miner file).</p>
 <p>Each plugin project should implement at least 1 plugin. You can implement more, but good practice is to keep 1 plugin inside 1 project.
 <br><b>IMinerPlugin</b> is used for registering the plugin and there will be only 1 instance created. Its job is to give basic info such as name, UUID, version, etc.
 <br><b>IMiner</b> is the mandatory interface for all miners containing bare minimum functionalities and is being used as miner process instance created by IMinerPlugin.</p>
