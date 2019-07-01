@@ -19,7 +19,6 @@
 
 ## Tips
 * [CPU Mining Optimization](https://github.com/nicehash/NiceHashMinerLegacy/wiki/CPU-Mining-Optimization)
-* [ethminer](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Ethminer-Tips)
 
 ## Claymore Dual Mining
 * [Tweaking ClaymoreDual Intensity](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Tweaking-ClaymoreDual-Intensity)
