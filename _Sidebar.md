@@ -21,5 +21,5 @@
 * [CPU Mining Optimization](https://github.com/nicehash/NiceHashMinerLegacy/wiki/CPU-Mining-Optimization)
 
 ## Claymore Dual Mining
-* [Tweaking ClaymoreDual Intensity](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Tweaking-ClaymoreDual-Intensity)
+* [[Obsolete] Tweaking ClaymoreDual Intensity](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Tweaking-ClaymoreDual-Intensity)
 
