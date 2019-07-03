@@ -1,24 +1,19 @@
 There is a lot of different factors that can prevent you from downloading miner files.<br>
 The most common are:
 1. Anti-Virus removing files
-2. Unable to access miner download link
+2. Failed autodownload
 
 ### Anti-Virus removing downloaded miner files
 
-To fix this issue, you have to add an exception in your AV. It is best to add the whole NHM folder. <br>
-If you don't have AV you must add exception to Windows Defender inside Virus & threat protection.
+To fix this issue, you have to add NHM folder as an exception in your AV.<br>
+For example if you have Windows Defender, add exception inside Virus & threat protection settings.
 
-If this doesn't work try to fix the issue with the following methods.
+If this doesn't work, try to fix the issue with the following method.
 
-### Unable to access miner download link
+### Failed autodownload
+If autodownload fails, download the miner bins manually and unzip them to the miner plugin `bins` path.
+If you wish to upgrade to a newer miner binary set **use_file_settings** to **true** (`"use_file_settings": true`) and replace URL for your target miner in `miner_bins_urls.json` file.
 
-This is possible due different reasons (link is broken, internet provider blocked miner site IP address, etc.).
-To fix this issue replace the `miner_mins_urls.json` file with the following:
-* https://github.com/nicehash/MinerDownloads/releases/download/v1.0/miner_bins_urls.7z
-* https://github.com/nicehash/MinerDownloads/releases/download/v1.0/miner_bins_urls.zip
 
-First try to download with 7z file and if that doesn't work use zip file.
-
-If none of this works try to download miner file manually.
 
 After these steps you should have miner file downloaded and ready to mine.
