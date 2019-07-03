@@ -8,7 +8,7 @@
 * [Exporting benchmark data](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Exporting-Benchmark-Data)
 
 ## Advanced Usage
-* [Algorithm ExtraLaunchParameters](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Algorithm-ExtraLaunchParameters)
+* [[Obsolete] Algorithm ExtraLaunchParameters](https://github.com/nicehash/NiceHashMinerLegacy/wiki/%5BObsolete%5D-Algorithm-ExtraLaunchParameters)
 * [Reserving API bind ports](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Reserving-API-bind-ports-(Advanced))
 * [Setting Environment Variables for Specific Miners](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Setting-Environment-Variables-for-specific-miners)
 * [Profit Normalization](https://github.com/nicehash/NiceHashMinerLegacy/wiki/Profit-Normalization)
