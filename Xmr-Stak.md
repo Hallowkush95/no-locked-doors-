@@ -11,7 +11,7 @@ Intensity is tweaked through the config files, elaborated in the next section. F
 
 ## Config
 
-In the `miner_plugins\xmr-stak` directory open configs folder.
+In the `miner_plugins\XmrStak` directory open configs folder.
 ```
 ├───bins
 ├───configs
