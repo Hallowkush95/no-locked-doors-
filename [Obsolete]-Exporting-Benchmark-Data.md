@@ -1,1 +1,0 @@
-Github user @bonifacio123 has created some tools to export and view benchmark and profitability data from NHML. You can get them and instructions on how to use them [here](https://github.com/bonifacio123/nh_tools)
