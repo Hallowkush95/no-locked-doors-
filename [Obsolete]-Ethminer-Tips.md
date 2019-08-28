@@ -1,5 +1,0 @@
-- make sure you have up-to-date GPU drivers;
-- try without any over-clocking;
-- try different options here: "Settings > Advanced > Dag Load Mode > dropdown: [singlekeep, single, sequental, parallel]" (default is singlekeep);
-- you need to have enough RAM or virtual memory if you are running multicard setup; on 6 card setup virtual memory (pagefile) needs to be at least than 32 GB;
-- if using singlekeep or single Dag Load Mode you need to have a decent CPU and decently fast RAM because it copies DAG from RAM to GPU-RAM and vice versa.
